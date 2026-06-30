@@ -1,5 +1,12 @@
 # WorldCupAnalysis ⚽
 
+![Java](https://img.shields.io/badge/Java-21-007396?logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.x-6DB33F?logo=springboot&logoColor=white)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?logo=thymeleaf&logoColor=white)
+[![Last commit](https://img.shields.io/github/last-commit/junse02/WorldCupAnalysis?logo=github)](https://github.com/junse02/WorldCupAnalysis/commits/main)
+![Top language](https://img.shields.io/github/languages/top/junse02/WorldCupAnalysis)
+![Repo size](https://img.shields.io/github/repo-size/junse02/WorldCupAnalysis)
+
 2026 북중미 월드컵 경기 일정을 가져와 각 팀의 **에이스 선수**와 **전술 성향**을 AI로 분석해 주는
 Spring Boot + Thymeleaf 웹사이트입니다.
 
@@ -8,6 +15,18 @@ Spring Boot + Thymeleaf 웹사이트입니다.
 - **화면**: Thymeleaf 서버 렌더링
 
 API 키가 없어도 **번들 샘플 데이터**와 **자리표시자 분석**으로 사이트가 그대로 동작합니다.
+
+## 화면 미리보기
+
+| 경기 일정 (홈) | 조별리그 순위 |
+|:---:|:---:|
+| [![홈 화면 — 날짜별 경기 일정과 스코어](docs/screenshots/home.png)](docs/screenshots/home.png) | [![조별리그 순위 — 12개 조 + 3위 와일드카드](docs/screenshots/standings.png)](docs/screenshots/standings.png) |
+
+**경기 분석** — 양 팀 에이스·강점/약점·포메이션·전술 요약과 맞대결 관전 포인트
+
+[![경기 분석 화면](docs/screenshots/match.png)](docs/screenshots/match.png)
+
+> 위 화면은 API 키 없이 번들 샘플 데이터(2026 조별리그 72경기 실제 결과)로 렌더링한 모습입니다.
 
 ## 실행
 
