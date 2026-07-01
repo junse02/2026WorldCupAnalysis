@@ -309,6 +309,17 @@ table.standings tr:last-child td { border-bottom: none; }
 
 .team-single { max-width: 560px; margin: 0 auto; }
 
+/* ---------- Players (Golden Boot) ---------- */
+.players-wrap { max-width: 640px; margin: 0 auto; }
+.c-player { font-weight: 700; }
+.players-table th:nth-child(4), .players-table th:nth-child(5),
+.players-table td:nth-child(4), .players-table td:nth-child(5) { text-align: center; width: 44px; }
+tr.rank-1 .c-rank, tr.rank-2 .c-rank, tr.rank-3 .c-rank { font-weight: 900; }
+tr.rank-1 .c-rank { color: #f4c84a; }
+tr.rank-2 .c-rank { color: #cbd5e1; }
+tr.rank-3 .c-rank { color: #d08b52; }
+tr.rank-1 .c-player { color: var(--gold); }
+
 tr.qual .c-rank { color: var(--green); font-weight: 900; }
 tr.qual .c-team { border-left: 3px solid var(--green); padding-left: 7px; }
 tr.third .c-rank { color: var(--gold); font-weight: 900; }

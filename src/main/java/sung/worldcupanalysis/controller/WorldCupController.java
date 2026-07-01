@@ -11,6 +11,7 @@ import sung.worldcupanalysis.model.MatchView;
 import sung.worldcupanalysis.service.AnalysisService;
 import sung.worldcupanalysis.service.BracketService;
 import sung.worldcupanalysis.service.MatchService;
+import sung.worldcupanalysis.service.PlayerStatsService;
 import sung.worldcupanalysis.service.StandingsService;
 
 import java.util.Optional;
@@ -23,17 +24,20 @@ public class WorldCupController {
     private final ApiFootballClient apiFootballClient;
     private final BracketService bracketService;
     private final StandingsService standingsService;
+    private final PlayerStatsService playerStatsService;
 
     public WorldCupController(MatchService matchService,
                               AnalysisService analysisService,
                               ApiFootballClient apiFootballClient,
                               BracketService bracketService,
-                              StandingsService standingsService) {
+                              StandingsService standingsService,
+                              PlayerStatsService playerStatsService) {
         this.matchService = matchService;
         this.analysisService = analysisService;
         this.apiFootballClient = apiFootballClient;
         this.bracketService = bracketService;
         this.standingsService = standingsService;
+        this.playerStatsService = playerStatsService;
     }
 
     @GetMapping("/")
@@ -80,6 +84,12 @@ public class WorldCupController {
         model.addAttribute("thirds", StandingsService.thirdPlaceRanking(tables));
         model.addAttribute("thirdsFinal", allComplete);
         return "standings";
+    }
+
+    @GetMapping("/players")
+    public String players(Model model) {
+        model.addAttribute("scorers", playerStatsService.topScorers());
+        return "players";
     }
 
     @GetMapping("/teams/{name}")
