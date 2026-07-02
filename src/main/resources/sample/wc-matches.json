@@ -475,22 +475,22 @@
       "score": { "winner": "HOME_TEAM", "duration": "REGULAR", "fullTime": { "home": 2, "away": 0 } }
     },
     {
-      "id": 270080, "utcDate": "2026-07-01T19:00:00Z", "status": "TIMED", "stage": "LAST_32", "group": null,
+      "id": 270080, "utcDate": "2026-07-01T19:00:00Z", "status": "FINISHED", "stage": "LAST_32", "group": null,
       "homeTeam": { "id": null, "name": "England", "shortName": "England", "tla": "ENG" },
       "awayTeam": { "id": null, "name": "DR Congo", "shortName": "DR Congo", "tla": "COD" },
-      "score": null
+      "score": { "winner": "HOME_TEAM", "duration": "REGULAR", "fullTime": { "home": 2, "away": 1 } }
     },
     {
-      "id": 270081, "utcDate": "2026-07-01T22:00:00Z", "status": "TIMED", "stage": "LAST_32", "group": null,
+      "id": 270081, "utcDate": "2026-07-01T22:00:00Z", "status": "FINISHED", "stage": "LAST_32", "group": null,
       "homeTeam": { "id": null, "name": "United States", "shortName": "United States", "tla": "USA" },
       "awayTeam": { "id": null, "name": "Bosnia and Herzegovina", "shortName": "Bosnia and Herzegovina", "tla": "BIH" },
-      "score": null
+      "score": { "winner": "HOME_TEAM", "duration": "REGULAR", "fullTime": { "home": 2, "away": 0 } }
     },
     {
-      "id": 270082, "utcDate": "2026-07-02T01:00:00Z", "status": "TIMED", "stage": "LAST_32", "group": null,
+      "id": 270082, "utcDate": "2026-07-02T01:00:00Z", "status": "FINISHED", "stage": "LAST_32", "group": null,
       "homeTeam": { "id": null, "name": "Belgium", "shortName": "Belgium", "tla": "BEL" },
       "awayTeam": { "id": null, "name": "Senegal", "shortName": "Senegal", "tla": "SEN" },
-      "score": null
+      "score": { "winner": "HOME_TEAM", "duration": "EXTRA_TIME", "fullTime": { "home": 3, "away": 2 } }
     },
     {
       "id": 270083, "utcDate": "2026-07-02T19:00:00Z", "status": "TIMED", "stage": "LAST_32", "group": null,
