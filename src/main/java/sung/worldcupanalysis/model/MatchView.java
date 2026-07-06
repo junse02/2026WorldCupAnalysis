@@ -20,6 +20,7 @@ public record MatchView(
         String dateLabel,
         String timeLabel,
         String scoreLabel,
+        String penaltyLabel,
         boolean hasOdds,
         Integer oddsHome,
         Integer oddsDraw,

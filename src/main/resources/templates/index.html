@@ -40,6 +40,7 @@
                     </div>
                     <div class="center">
                         <span th:if="${m.scoreLabel != null}" class="score" th:text="${m.scoreLabel}">0 : 0</span>
+                        <span th:if="${m.penaltyLabel != null}" class="pens" th:text="${m.penaltyLabel}">승부차기 3:4</span>
                         <span th:if="${m.scoreLabel == null}" class="kickoff" th:text="${m.timeLabel}">21:00</span>
                         <span class="vs">VS</span>
                     </div>

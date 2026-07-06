@@ -24,6 +24,7 @@
             </div>
             <div class="sb-center">
                 <span th:if="${match.scoreLabel != null}" class="sb-score" th:text="${match.scoreLabel}">0 : 0</span>
+                <span th:if="${match.penaltyLabel != null}" class="sb-pens" th:text="${match.penaltyLabel}">승부차기 3:4</span>
                 <span th:if="${match.scoreLabel == null}" class="sb-vs">VS</span>
                 <span class="sb-datetime" th:text="${match.dateLabel + ' ' + match.timeLabel}">날짜 시간</span>
             </div>

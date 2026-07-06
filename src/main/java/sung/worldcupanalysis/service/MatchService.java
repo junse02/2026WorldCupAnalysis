@@ -90,6 +90,7 @@ public class MatchService {
                 dateLabel,
                 local.format(TIME_FMT),
                 scoreLabel(m),
+                penaltyLabel(m),
                 hasOdds(m),
                 oddsHome(m),
                 oddsDraw(m),
@@ -146,12 +147,19 @@ public class MatchService {
         if (home == null || away == null) {
             return null;
         }
-        String label = home + " : " + away;
-        var pens = m.score().penalties();
-        if (pens != null && pens.home() != null && pens.away() != null) {
-            label += " (승부차기 " + pens.home() + ":" + pens.away() + ")";
+        return home + " : " + away;
+    }
+
+    /** Penalty-shootout line shown under the score, e.g. "승부차기 3:4"; null if none. */
+    private String penaltyLabel(MatchDto m) {
+        if (m.score() == null) {
+            return null;
         }
-        return label;
+        var pens = m.score().penalties();
+        if (pens == null || pens.home() == null || pens.away() == null) {
+            return null;
+        }
+        return "승부차기 " + pens.home() + ":" + pens.away();
     }
 
     private String stageLabel(String stage) {
