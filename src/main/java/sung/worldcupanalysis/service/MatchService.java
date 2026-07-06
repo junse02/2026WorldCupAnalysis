@@ -93,7 +93,12 @@ public class MatchService {
                 hasOdds(m),
                 oddsHome(m),
                 oddsDraw(m),
-                oddsAway(m));
+                oddsAway(m),
+                oddsEstimated(m));
+    }
+
+    private static boolean oddsEstimated(MatchDto m) {
+        return m.odds() != null && Boolean.TRUE.equals(m.odds().estimated());
     }
 
     private static boolean hasOdds(MatchDto m) {

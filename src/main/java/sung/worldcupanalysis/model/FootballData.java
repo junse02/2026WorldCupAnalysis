@@ -31,11 +31,12 @@ public final class FootballData {
     }
 
     /**
-     * Pre-match win/draw/loss probabilities (integer percent, summing to 100),
-     * derived from bookmaker 1X2 odds with the margin removed. May be null when
-     * no odds are available for a fixture.
+     * Pre-match win/draw/loss probabilities (integer percent, summing to 100).
+     * Normally derived from bookmaker 1X2 odds with the margin removed; when
+     * {@code estimated} is true they are a strength-based estimate instead (no
+     * real market line was available). May be null when no odds exist at all.
      */
-    public record OddsDto(Integer home, Integer draw, Integer away) {
+    public record OddsDto(Integer home, Integer draw, Integer away, Boolean estimated) {
     }
 
     public record ScoreDto(String winner, String duration, ScoreLine fullTime, ScoreLine penalties) {

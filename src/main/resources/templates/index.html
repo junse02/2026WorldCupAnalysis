@@ -62,6 +62,7 @@
                         <span class="od">무 <b th:text="${od} + '%'">28%</b></span>
                         <span class="oa">원정 <b th:text="${oa} + '%'">27%</b></span>
                     </div>
+                    <div class="odds-note" th:text="${m.oddsEstimated} ? '전력 기반 추정' : '북메이커 배당 기준'">배당 기준</div>
                 </div>
                 <div class="card-cta">분석 보기 →</div>
             </a>

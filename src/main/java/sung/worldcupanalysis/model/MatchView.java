@@ -23,5 +23,6 @@ public record MatchView(
         boolean hasOdds,
         Integer oddsHome,
         Integer oddsDraw,
-        Integer oddsAway) {
+        Integer oddsAway,
+        boolean oddsEstimated) {
 }

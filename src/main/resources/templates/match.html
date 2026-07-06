@@ -38,7 +38,9 @@
 
     <section class="odds-panel" th:if="${match.hasOdds}"
              th:with="oh=${match.oddsHome},od=${match.oddsDraw},oa=${match.oddsAway}">
-        <div class="odds-title">경기 전 승 · 무 · 패 확률 (북메이커 배당 환산)</div>
+        <div class="odds-title"
+             th:text="${match.oddsEstimated} ? '승 · 무 · 패 확률 (팀 전력 기반 추정)' : '경기 전 승 · 무 · 패 확률 (북메이커 배당 환산)'">
+            경기 전 승 · 무 · 패 확률</div>
         <div class="odds">
             <div class="odds-bar">
                 <span class="odds-seg-home" th:style="'width:' + ${oh} + '%'"></span>

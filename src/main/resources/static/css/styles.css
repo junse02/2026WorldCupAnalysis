@@ -174,6 +174,7 @@ a { color: inherit; text-decoration: none; }
 .odds-legend .oh b { color: var(--blue); }
 .odds-legend .od b { color: var(--text); }
 .odds-legend .oa b { color: var(--gold); }
+.odds-note { font-size: 10px; color: var(--muted); text-align: right; margin-top: 3px; opacity: 0.8; }
 .odds-title {
     font-size: 10px; letter-spacing: 2px; color: var(--muted);
     text-transform: uppercase; margin-bottom: 8px;
