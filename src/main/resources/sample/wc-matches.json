@@ -680,25 +680,53 @@
       "odds": { "home": 58, "draw": 25, "away": 17 }
     },
     {
-      "id": 270098, "utcDate": "2026-07-10T19:00:00Z", "status": "TIMED", "stage": "QUARTER_FINALS", "group": null,
+      "id": 270098, "utcDate": "2026-07-10T19:00:00Z", "status": "FINISHED", "stage": "QUARTER_FINALS", "group": null,
       "homeTeam": { "id": null, "name": "Spain", "shortName": "Spain", "tla": "ESP" },
       "awayTeam": { "id": null, "name": "Belgium", "shortName": "Belgium", "tla": "BEL" },
-      "score": null,
-      "odds": { "home": 52, "draw": 28, "away": 20, "estimated": true }
+      "score": { "winner": "HOME_TEAM", "duration": "REGULAR", "fullTime": { "home": 2, "away": 1 } },
+      "odds": { "home": 54, "draw": 26, "away": 20 }
     },
     {
-      "id": 270099, "utcDate": "2026-07-11T21:00:00Z", "status": "TIMED", "stage": "QUARTER_FINALS", "group": null,
+      "id": 270099, "utcDate": "2026-07-11T21:00:00Z", "status": "FINISHED", "stage": "QUARTER_FINALS", "group": null,
       "homeTeam": { "id": null, "name": "Norway", "shortName": "Norway", "tla": "NOR" },
       "awayTeam": { "id": null, "name": "England", "shortName": "England", "tla": "ENG" },
-      "score": null,
-      "odds": { "home": 30, "draw": 29, "away": 41, "estimated": true }
+      "score": { "winner": "AWAY_TEAM", "duration": "REGULAR", "fullTime": { "home": 1, "away": 2 } },
+      "odds": { "home": 28, "draw": 28, "away": 44 }
     },
     {
-      "id": 270100, "utcDate": "2026-07-12T00:00:00Z", "status": "TIMED", "stage": "QUARTER_FINALS", "group": null,
+      "id": 270100, "utcDate": "2026-07-12T00:00:00Z", "status": "FINISHED", "stage": "QUARTER_FINALS", "group": null,
       "homeTeam": { "id": null, "name": "Argentina", "shortName": "Argentina", "tla": "ARG" },
       "awayTeam": { "id": null, "name": "Switzerland", "shortName": "Switzerland", "tla": "SUI" },
-      "score": null,
-      "odds": { "home": 64, "draw": 22, "away": 14, "estimated": true }
+      "score": { "winner": "HOME_TEAM", "duration": "REGULAR", "fullTime": { "home": 1, "away": 0 } },
+      "odds": { "home": 65, "draw": 22, "away": 13 }
+    },
+    {
+      "id": 270101, "utcDate": "2026-07-14T20:00:00Z", "status": "FINISHED", "stage": "SEMI_FINALS", "group": null,
+      "homeTeam": { "id": null, "name": "France", "shortName": "France", "tla": "FRA" },
+      "awayTeam": { "id": null, "name": "Spain", "shortName": "Spain", "tla": "ESP" },
+      "score": { "winner": "HOME_TEAM", "duration": "REGULAR", "fullTime": { "home": 2, "away": 1 } },
+      "odds": { "home": 42, "draw": 31, "away": 27 }
+    },
+    {
+      "id": 270102, "utcDate": "2026-07-15T20:00:00Z", "status": "FINISHED", "stage": "SEMI_FINALS", "group": null,
+      "homeTeam": { "id": null, "name": "England", "shortName": "England", "tla": "ENG" },
+      "awayTeam": { "id": null, "name": "Argentina", "shortName": "Argentina", "tla": "ARG" },
+      "score": { "winner": "AWAY_TEAM", "duration": "REGULAR", "fullTime": { "home": 1, "away": 2 } },
+      "odds": { "home": 33, "draw": 33, "away": 34 }
+    },
+    {
+      "id": 270103, "utcDate": "2026-07-18T20:00:00Z", "status": "FINISHED", "stage": "THIRD_PLACE", "group": null,
+      "homeTeam": { "id": null, "name": "Spain", "shortName": "Spain", "tla": "ESP" },
+      "awayTeam": { "id": null, "name": "England", "shortName": "England", "tla": "ENG" },
+      "score": { "winner": "HOME_TEAM", "duration": "REGULAR", "fullTime": { "home": 2, "away": 1 } },
+      "odds": { "home": 44, "draw": 28, "away": 28 }
+    },
+    {
+      "id": 270104, "utcDate": "2026-07-19T20:00:00Z", "status": "FINISHED", "stage": "FINAL", "group": null,
+      "homeTeam": { "id": null, "name": "France", "shortName": "France", "tla": "FRA" },
+      "awayTeam": { "id": null, "name": "Argentina", "shortName": "Argentina", "tla": "ARG" },
+      "score": { "winner": "HOME_TEAM", "duration": "PENALTY_SHOOTOUT", "fullTime": { "home": 2, "away": 2 }, "penalties": { "home": 4, "away": 2 } },
+      "odds": { "home": 38, "draw": 32, "away": 30 }
     }
   ]
 }
